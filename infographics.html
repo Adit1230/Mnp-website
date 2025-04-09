@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Infographics</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #infographics-table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #infographics-table th,
+    #infographics-table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    #infographics-table th {
+      background-color: #8B4513;
+      color: white;
+    }
+
+    #infographics-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #infographics-table th:nth-child(1),
+    /* For Name column */
+    #infographics-table td:nth-child(1) {
+      width: 33%;
+      /* Adjust width as needed */
+    }
+
+    #infographics-table th:nth-child(2) {
+      padding-left: 15%;
+    },
+    /* For Image column */
+    #infographics-table td:nth-child(2) {
+      width: 33%;
+      /* Adjust width as needed */
+    }
+
+    #infographics-table th:nth-child(3),
+    /* For Information column */
+    #infographics-table td:nth-child(3) {
+      width: 34%;
+      /* Adjust width as needed */
+    }
+
+
+    #infographics-table tr:hover {
+      background-color: #ddd;
+    }
+
+    #infographics-table td a {
+      text-decoration: none;
+      color: #8B4513;
+    }
+
+    #infographics-table td a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar"></div>
+  <script>
+    document.getElementById('navbar').innerHTML = '<object type="text/html" data="navbar.html" width="1000"></object>';
+  </script>
+  <div id="logo">
+    <a id="innerimginside" href="index.html"><img src="images/mnp-logo.png" id="innerimg"></a>
+    <img src="images/home_mnp.png" id="topcoverimg">
+  </div>
+
+  <table id="infographics-table">
+    <tr>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Information</th>
+    </tr>
+    <tr>
+      <td><a href="infographics/sonoluminescence.html">Sonoluminescence</a></td>
+      <td><div class = "infographics_logo"> <img src = images/infographics/sonoluminescence/slide1.webp> </img> </div></td>
+      <td>How sound can create light</td>
+    </tr>
+
+    <tr>
+      <td><a href="infographics/collatz.html">Collatz conjencture</a></td>
+      <td><div class = "infographics_logo"> <img src = images/infographics/collatz/slide1.webp> </img> </div></td> <!-- Add the actual date here -->
+      <td>About the collatz conjencture</td>
+    </tr>
+  </table>
+
+  <hr>
+  <div id="footer">
+    <span>
+      © 2024 Maths And Physics Club.
+    </span>
+  </div>
+  <div id="footer2">
+    <div id="social-icons">
+      <a class="icon" href="https://facebook.com/mnpiitb" title="Maths And Physics Club on Facebook"
+        target="_blank"><img class="fa" src="images/facebook.png"></a>
+      <a class="icon" href="https://instagram.com/mnpclub.iitb" title="Maths And Physics Club on Instagram"
+        target="_blank"><img class="fa" src="images/instagram.png"></a>
+      <a class="icon" href="https://github.com/mnp-club" title="Maths And Physics Club on Github" target="_blank"><img
+          class="fa" src="images/github.png"></a>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
